@@ -16,6 +16,12 @@ export default class App extends React.Component {
         
       };
   }
+
+  componentDidMount() {
+    Font.loadAsync({
+      'Roboto_medium': require('./assets/fonts/Roboto_medium.ttf'),
+    });
+  }
 	
   render() {
     
